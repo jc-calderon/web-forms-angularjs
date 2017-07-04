@@ -10,6 +10,26 @@
             </tr>
         </table>
     </div>
+    
+    <div ng-app="webForms" ng-controller="webFormsController as webFormCtrl">
+        <h2>All Products AngularJS way</h2>  
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+            </tr>
+            <tr ng-repeat="product in webFormCtrl.products">
+                <td>{{product.name}}</td>
+                <td>{{product.quantity}}</td>
+            </tr>
+        </table>
+    </div>
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/restangular/1.5.1/restangular.min.js"></script>
+    <script type="text/javascript" src="/Scripts/AngularJS/angular.module.js"></script>
+    <script type="text/javascript" src="/Scripts/AngularJS/web-form.controller.js"></script>
 
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
     <script>
